@@ -156,7 +156,7 @@
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <label>Appointment Item</label>
     <nameField>
-        <displayFormat>IS-{0000}</displayFormat>
+        <displayFormat>AptItem-{0000}</displayFormat>
         <label>Name</label>
         <type>AutoNumber</type>
     </nameField>

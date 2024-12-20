@@ -156,7 +156,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Appointment</label>
     <nameField>
-        <displayFormat>AC-{0000}</displayFormat>
+        <displayFormat>APPT-{0000}</displayFormat>
         <label>Name</label>
         <type>AutoNumber</type>
     </nameField>
