@@ -6,7 +6,6 @@
     <inlineHelpText>Enter contact associated with this scheduling</inlineHelpText>
     <label>Client</label>
     <referenceTo>Contact</referenceTo>
-    <relationshipLabel>Schedulings</relationshipLabel>
     <relationshipName>Schedulings</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>

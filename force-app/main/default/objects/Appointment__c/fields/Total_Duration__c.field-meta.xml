@@ -4,8 +4,8 @@
     <description>The total duration of the scheduling, calculated by summing the durations of all related items in the scheduling.</description>
     <inlineHelpText>The total duration of the scheduling</inlineHelpText>
     <label>Total Duration</label>
-    <summarizedField>Schedule_Item__c.Duration__c</summarizedField>
-    <summaryForeignKey>Schedule_Item__c.Schedule__c</summaryForeignKey>
+    <summarizedField>Appointment_Item__c.Duration__c</summarizedField>
+    <summaryForeignKey>Appointment_Item__c.Schedule__c</summaryForeignKey>
     <summaryOperation>sum</summaryOperation>
     <trackTrending>false</trackTrending>
     <type>Summary</type>
