@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_must_be_over_18</fullName>
+    <active>true</active>
+    <description>This validation rule ensures that no scheduling can be created for a client under the age of 18 unless a responsible contact is assigned</description>
+    <errorConditionFormula>IF(Client__r.Age__c &lt; 18  &amp;&amp; ISBLANK(Client__r.ReportsToId), TRUE, FALSE)</errorConditionFormula>
+    <errorMessage>The client is a minor and does not have a responsible person</errorMessage>
+</ValidationRule>
