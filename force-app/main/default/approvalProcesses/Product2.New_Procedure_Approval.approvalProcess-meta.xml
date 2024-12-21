@@ -16,42 +16,47 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <type>adhoc</type>
+                <name>licetlemusq@resilient-unicorn-4tppoj.com</name>
+                <type>user</type>
             </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>New Procedure Approval</label>
-        <name>New_Procedure_Approval</name>
+        <label>Step 1</label>
+        <name>Step_1</name>
     </approvalStep>
     <emailTemplate>unfiled$public/Approve_New_Produce</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Product2.IsActive</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+    </entryCriteria>
     <finalApprovalActions>
         <action>
-            <name>Send_Email_Approval_Procedure</name>
-            <type>Alert</type>
+            <name>Active_To_True</name>
+            <type>FieldUpdate</type>
         </action>
         <action>
-            <name>Set_Active_to_True</name>
-            <type>FieldUpdate</type>
+            <name>Send_Email_Approval</name>
+            <type>Alert</type>
         </action>
     </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
     <finalRejectionActions>
         <action>
-            <name>Send_Email_Not_Approval_Procedure</name>
-            <type>Alert</type>
+            <name>Active_To_False</name>
+            <type>FieldUpdate</type>
         </action>
         <action>
-            <name>Set_Active_to_False</name>
-            <type>FieldUpdate</type>
+            <name>Send_Email_Rejected</name>
+            <type>Alert</type>
         </action>
     </finalRejectionActions>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
-    <label>Procedure Approval</label>
-    <nextAutomatedApprover>
-        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
-        <userHierarchyField>Manager</userHierarchyField>
-    </nextAutomatedApprover>
+    <label>New Procedure Approval</label>
     <processOrder>1</processOrder>
-    <recordEditability>AdminOnly</recordEditability>
-    <showApprovalHistory>false</showApprovalHistory>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>
