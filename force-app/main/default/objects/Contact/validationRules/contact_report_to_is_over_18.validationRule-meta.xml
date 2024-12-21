@@ -4,5 +4,6 @@
     <active>true</active>
     <description>This validation rule ensures that a contact is at least 18 years old in order to be considered report to</description>
     <errorConditionFormula>IF( ReportsTo.Age__c &lt; 18, TRUE, FALSE)</errorConditionFormula>
+    <errorDisplayField>ReportsToId</errorDisplayField>
     <errorMessage>Contact must be at least 18 years old to be designated as report to.</errorMessage>
 </ValidationRule>

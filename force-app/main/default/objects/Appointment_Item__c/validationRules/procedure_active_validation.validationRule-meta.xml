@@ -4,5 +4,6 @@
     <active>true</active>
     <description>This rule ensured that if the program is not active, it cannot be selected as a scheduling item.</description>
     <errorConditionFormula>IF(AND(Procedure__r.IsActive = TRUE, NOT(ISBLANK(Procedure__c))), FALSE, TRUE)</errorConditionFormula>
+    <errorDisplayField>Procedure__c</errorDisplayField>
     <errorMessage>This procedure cannot be selected as it is not activated.</errorMessage>
 </ValidationRule>
