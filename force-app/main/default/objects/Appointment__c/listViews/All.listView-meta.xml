@@ -3,8 +3,8 @@
     <fullName>All</fullName>
     <columns>NAME</columns>
     <columns>Client__c</columns>
-    <columns>Scheduling_Date__c</columns>
     <columns>Status__c</columns>
+    <columns>Scheduling_Date__c</columns>
     <columns>Total_Duration__c</columns>
     <columns>Total_Value__c</columns>
     <filterScope>Everything</filterScope>

@@ -3,8 +3,6 @@
     <fullName>AllProducts</fullName>
     <columns>PRODUCT2.NAME</columns>
     <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
-    <columns>PRODUCT2.DESCRIPTION</columns>
-    <columns>PRODUCT2.FAMILY</columns>
     <columns>Cost__c</columns>
     <columns>Duration__c</columns>
     <columns>PRODUCT2.ACTIVE</columns>
