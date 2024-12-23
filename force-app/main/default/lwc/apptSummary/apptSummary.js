@@ -1,21 +1,23 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, api, wire } from 'lwc';
+import getAppointmentDetails from '@salesforce/apex/AppointmentController.getAppointmentDetails';
 
-export default class ApptSummary extends LightningElement {
-    SchedulingDate = '2021-07-01';
-    Procedures = [
-        {
-            id: '1',
-            name : 'Limpieza Dental',
-            CostOfEachProcedure: 'Limpieza Dental',
-            professional: 'Dr. Juan Pérez',
-        },
-        {
-            id: '2',
-            name: 'Ortodoncia',
-            CostOfEachProcedure: 'Dra. María López',
-            professional: 'Dra. María López',
+export default class AppointmentSummary extends LightningElement {
+    @api recordId;
+    reservationDate;
+    totalValue;
+    totalDuration;
+    procedures = [];
+
+    @wire(getAppointmentDetails, { appointmentId: '$recordId' })
+    wiredAppointment({ error, data }) {
+        if (data) {
+            this.reservationDate = new Date(data.reservationDate).toLocaleDateString();
+            this.totalValue = data.totalValue;
+            this.totalDuration = data.totalDuration;
+            this.procedures = data.procedures;
+        } else if (error) {
+            console.error('Error loading appointment details:', error);
         }
-    ]
-    totalValue = 12000;
-    totalDuration = 120;
+        console.log('appointmentId:-------------------', this.recordId); // Verifica si el appointmentId es correcto
+    }
 }

@@ -1,9 +1,9 @@
 <template>
-    <div class="appointment-summary">
+    <div class="appointment-summary" recordId = {recordId}>
         <h2 class="summary-title">Resumen de la Cita</h2>
         
         <div class="summary-info">
-            <p><strong>Fecha de la cita:</strong> {SchedulingDate}</p>
+            <p><strong>Fecha de la cita:</strong> {reservationDate}</p>
         </div>
 
         <table class="procedures-table">
@@ -15,11 +15,11 @@
                 </tr>
             </thead>
             <tbody>
-                <template for:each={Procedures} for:item="procedure">
-                    <tr key={procedure.Id}>
-                        <td>{procedure.name}</td>
-                        <td>{procedure.CostOfEachProcedure}</td>
-                        <td>{procedure.professional}</td>
+                <template for:each={procedures} for:item="item">
+                    <tr key={item.name}>
+                        <td>{item.name}</td>
+                        <td>{item.value}</td>
+                        <td>{item.professionalName}</td>
                     </tr>
                 </template>
             </tbody>
