@@ -1,0 +1,33 @@
+<template>
+    <div class="appointment-summary">
+        <h2 class="summary-title">Resumen de la Cita</h2>
+        
+        <div class="summary-info">
+            <p><strong>Fecha de la cita:</strong> {SchedulingDate}</p>
+        </div>
+
+        <table class="procedures-table">
+            <thead>
+                <tr>
+                    <th>Procedimiento</th>
+                    <th>Costo</th>
+                    <th>Profesional</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template for:each={Procedures} for:item="procedure">
+                    <tr key={procedure.Id}>
+                        <td>{procedure.name}</td>
+                        <td>{procedure.CostOfEachProcedure}</td>
+                        <td>{procedure.professional}</td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+
+        <div class="summary-totals">
+            <p><strong>Valor Total:</strong> {totalValue}</p>
+            <p><strong>Duración Total:</strong> {totalDuration}</p>
+        </div>
+    </div>
+</template>
