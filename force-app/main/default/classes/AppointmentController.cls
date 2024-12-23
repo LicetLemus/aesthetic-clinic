@@ -6,7 +6,7 @@ public with sharing class AppointmentController {
 
         // Obtener detalles de la cita
         Appointment__c reservation = [
-            SELECT Scheduling_Date__c, Total_Value__c, Total_Duration__c
+            SELECT Scheduling_Date__c, Total_Value__c, Total_Duration__c, Status__c
             FROM Appointment__c 
             WHERE Id = :appointmentId 
             LIMIT 1
@@ -15,6 +15,7 @@ public with sharing class AppointmentController {
         result.reservationDate = reservation.Scheduling_Date__c;
         result.totalValue = reservation.Total_Value__c;
         result.totalDuration = reservation.Total_Duration__c;
+        result.appointmentStatus = reservation.Status__c;
 
         // Obtener los procedimientos relacionados
         List<Appointment_Item__c> items = [
@@ -42,6 +43,7 @@ public with sharing class AppointmentController {
         @AuraEnabled public Decimal totalValue;
         @AuraEnabled public Decimal totalDuration;
         @AuraEnabled public List<ProcedureDetails> procedures;
+        @AuraEnabled public String appointmentStatus;
     }
 
     // Clase para los detalles del procedimiento
