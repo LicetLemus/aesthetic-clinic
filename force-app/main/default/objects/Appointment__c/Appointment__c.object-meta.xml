@@ -154,13 +154,13 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Appointment</label>
+    <label>Reserva</label>
     <nameField>
         <displayFormat>APPT-{0000}</displayFormat>
-        <label>Name</label>
+        <label>Nombre</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Appointments</pluralLabel>
+    <pluralLabel>Reservas</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

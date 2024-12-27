@@ -3,7 +3,7 @@
     <fullName>Status__c</fullName>
     <description>Represents the status of the schedule item</description>
     <inlineHelpText>Select the current status of this item in the schedule</inlineHelpText>
-    <label>Status</label>
+    <label>Estado</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -14,12 +14,12 @@
             <value>
                 <fullName>New</fullName>
                 <default>true</default>
-                <label>New</label>
+                <label>Nuevo</label>
             </value>
             <value>
                 <fullName>Completed</fullName>
                 <default>false</default>
-                <label>Completed</label>
+                <label>Completado</label>
             </value>
         </valueSetDefinition>
     </valueSet>

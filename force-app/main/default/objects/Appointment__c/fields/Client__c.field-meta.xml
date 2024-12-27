@@ -3,9 +3,10 @@
     <fullName>Client__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <description>The contact associated with this scheduling. This field links the scheduling to a specific client.</description>
-    <inlineHelpText>Enter contact associated with this scheduling</inlineHelpText>
-    <label>Client</label>
+    <inlineHelpText>Ingrese el cliente asociado a la reservación</inlineHelpText>
+    <label>Cliente</label>
     <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Reservas</relationshipLabel>
     <relationshipName>Schedulings</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>

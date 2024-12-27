@@ -2,8 +2,8 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Total_Duration__c</fullName>
     <description>The total duration of the scheduling, calculated by summing the durations of all related items in the scheduling.</description>
-    <inlineHelpText>The total duration of the scheduling</inlineHelpText>
-    <label>Total Duration</label>
+    <inlineHelpText>Duración total de la reserva</inlineHelpText>
+    <label>Duración total</label>
     <summarizedField>Appointment_Item__c.Duration__c</summarizedField>
     <summaryForeignKey>Appointment_Item__c.Schedule__c</summaryForeignKey>
     <summaryOperation>sum</summaryOperation>

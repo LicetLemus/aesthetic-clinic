@@ -2,7 +2,7 @@
 <DuplicateRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <actionOnInsert>Block</actionOnInsert>
     <actionOnUpdate>Block</actionOnUpdate>
-    <alertText>A contact with this email address already exists. Please verify the email before proceeding.</alertText>
+    <alertText>Ya existe un contacto con esta dirección de correo electrónico. Verifique el correo electrónico antes de continuar.</alertText>
     <description>This validation rule ensures that the contact cannot be registered if the same email already exists</description>
     <duplicateRuleFilter>
         <booleanFilter xsi:nil="true"/>

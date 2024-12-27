@@ -154,13 +154,13 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
-    <label>Appointment Item</label>
+    <label>Ítem de la programación</label>
     <nameField>
         <displayFormat>AptItem-{0000}</displayFormat>
-        <label>Name</label>
+        <label>Nombre</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Appointment Items</pluralLabel>
+    <pluralLabel>Ítems de la programación</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>

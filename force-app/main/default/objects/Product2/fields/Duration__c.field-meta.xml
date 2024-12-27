@@ -3,8 +3,8 @@
     <fullName>Duration__c</fullName>
     <description>The duration of the procedure in minutes. This field represents the actual time required to complete the procedure.</description>
     <externalId>false</externalId>
-    <inlineHelpText>Enter the time duration of the procedure in minutes</inlineHelpText>
-    <label>Duration</label>
+    <inlineHelpText>Ingrese el tiempo de duración del procedimiento en minutos.</inlineHelpText>
+    <label>Duración</label>
     <precision>18</precision>
     <required>false</required>
     <scale>0</scale>

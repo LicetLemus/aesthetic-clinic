@@ -95,7 +95,7 @@
     <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
     <label>AestheticControl</label>
     <navType>Standard</navType>
-    <tabs>standard-AnalyticsDataManager</tabs>
+    <tabs>standard-home</tabs>
     <tabs>Appointment__c</tabs>
     <tabs>Appointment_Item__c</tabs>
     <tabs>standard-Product2</tabs>

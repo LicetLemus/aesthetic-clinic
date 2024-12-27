@@ -4,7 +4,7 @@
     <description>The duration of the schedule item in hours or minutes</description>
     <externalId>false</externalId>
     <inlineHelpText>Enter the estimated duration for the procedure or service</inlineHelpText>
-    <label>Duration</label>
+    <label>Duración</label>
     <precision>18</precision>
     <required>false</required>
     <scale>0</scale>

@@ -5,5 +5,5 @@
     <description>The procedure cannot be created with the checkbox activate to true</description>
     <errorConditionFormula>IF(IsActive  = True, true, false)</errorConditionFormula>
     <errorDisplayField>IsActive</errorDisplayField>
-    <errorMessage>The procedure cannot be created active, because it must first be approved</errorMessage>
+    <errorMessage>El procedimiento no se puede crear activo, porque primero debe ser aprobado</errorMessage>
 </ValidationRule>

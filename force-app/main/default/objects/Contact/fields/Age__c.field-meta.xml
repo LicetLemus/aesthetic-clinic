@@ -5,8 +5,8 @@
     <externalId>false</externalId>
     <formula>FLOOR(( TODAY()  -  Birthdate ) / 365)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <inlineHelpText>Contact&apos;s age based on their birthdate</inlineHelpText>
-    <label>Age</label>
+    <inlineHelpText>Edad del contacto según su fecha de nacimiento</inlineHelpText>
+    <label>Edad</label>
     <precision>18</precision>
     <required>false</required>
     <scale>0</scale>

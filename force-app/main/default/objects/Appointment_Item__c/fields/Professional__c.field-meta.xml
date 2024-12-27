@@ -4,7 +4,7 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <description>Represents the professional assigned to the item</description>
     <inlineHelpText>This field links to the user who will be responsible for performing the procedure</inlineHelpText>
-    <label>Professional</label>
+    <label>Profesional</label>
     <referenceTo>User</referenceTo>
     <relationshipName>Schedule_Items</relationshipName>
     <required>false</required>

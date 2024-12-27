@@ -3,9 +3,10 @@
     <fullName>Procedure__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <description>Refers to the procedure related to this schedule item</description>
-    <inlineHelpText>This field links to a product (procedure) that is associated with the item in the schedule</inlineHelpText>
-    <label>Procedure</label>
+    <inlineHelpText>Este campo se vincula un procedimiento que está asociado con el elemento en el cronograma.</inlineHelpText>
+    <label>Procedimiento</label>
     <referenceTo>Product2</referenceTo>
+    <relationshipLabel>Ítems de la programación</relationshipLabel>
     <relationshipName>Schedule_Items</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>

@@ -5,5 +5,5 @@
     <description>This validation rule ensures that no new items can be added to a reservation once its status has been changed to &quot;Scheduled&quot;</description>
     <errorConditionFormula>IF( ISPICKVAL(Schedule__r.Status__c, &quot;Scheduled&quot;), TRUE, FALSE)</errorConditionFormula>
     <errorDisplayField>Schedule__c</errorDisplayField>
-    <errorMessage>You cannot add new items to the reservation once it has been marked as &apos;Scheduled&apos;.</errorMessage>
+    <errorMessage>No se pueden agregar nuevos elementos a la reserva una vez que se ha marcado como &apos;Programado&apos;</errorMessage>
 </ValidationRule>
