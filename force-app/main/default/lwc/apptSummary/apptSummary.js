@@ -25,7 +25,7 @@ export default class AppointmentSummary extends LightningElement {
 
     get displaySummaryAppt() {
         return (
-            this.appointmentStatus === 'Scheduled' || 
+            this.appointmentStatus === 'Completed' || 
             this.appointmentStatus === 'Pending Payment'
         )
     }
