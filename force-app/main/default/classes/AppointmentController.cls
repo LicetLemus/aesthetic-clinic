@@ -1,10 +1,8 @@
 public with sharing class AppointmentController {
     @AuraEnabled(cacheable=true)
     public static AppointmentSummary getAppointmentDetails(Id appointmentId) {
-        // Consulta para obtener los datos de la cita y los procedimientos relacionados
         AppointmentSummary result = new AppointmentSummary();
 
-        // Obtener detalles de la cita
         Appointment__c reservation = [
             SELECT Scheduling_Date__c, Total_Value__c, Total_Duration__c, Status__c
             FROM Appointment__c 
@@ -17,7 +15,6 @@ public with sharing class AppointmentController {
         result.totalDuration = reservation.Total_Duration__c;
         result.appointmentStatus = reservation.Status__c;
 
-        // Obtener los procedimientos relacionados
         List<Appointment_Item__c> items = [
             SELECT Procedure__r.Name, Professional__r.Name, Value__c 
             FROM Appointment_Item__c 
@@ -37,7 +34,7 @@ public with sharing class AppointmentController {
         return result;
     }
 
-    // Clase para almacenar la respuesta
+    // Class of storage answer
     public class AppointmentSummary {
         @AuraEnabled public Date reservationDate;
         @AuraEnabled public Decimal totalValue;
@@ -46,7 +43,7 @@ public with sharing class AppointmentController {
         @AuraEnabled public String appointmentStatus;
     }
 
-    // Clase para los detalles del procedimiento
+    // Class of details procedure
     public class ProcedureDetails {
         @AuraEnabled public String name;
         @AuraEnabled public String professionalName;

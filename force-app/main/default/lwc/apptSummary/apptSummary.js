@@ -20,7 +20,7 @@ export default class AppointmentSummary extends LightningElement {
         } else if (error) {
             console.error('Error loading appointment details:', error);
         }
-        console.log('appointmentId:-------------------', this.recordId); // Verifica si el appointmentId es correcto
+        console.log('appointmentId:', this.recordId); // Verify the appointmentId is correct
     }
 
     get displaySummaryAppt() {
