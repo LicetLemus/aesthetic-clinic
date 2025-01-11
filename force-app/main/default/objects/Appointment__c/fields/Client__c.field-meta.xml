@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The contact associated with this scheduling. This field links the scheduling to a specific client.</description>
+    <inlineHelpText>Ingrese el cliente asociado a la reservación</inlineHelpText>
+    <label>Cliente</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Reservas</relationshipLabel>
+    <relationshipName>Schedulings</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

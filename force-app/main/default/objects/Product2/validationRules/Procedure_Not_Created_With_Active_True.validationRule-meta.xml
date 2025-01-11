@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Procedure_Not_Created_With_Active_True</fullName>
+    <active>true</active>
+    <description>The procedure cannot be created with the checkbox activate to true</description>
+    <errorConditionFormula>IF(IsActive  = True, true, false)</errorConditionFormula>
+    <errorDisplayField>IsActive</errorDisplayField>
+    <errorMessage>El procedimiento no se puede crear activo, porque primero debe ser aprobado</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>procedure_active_validation</fullName>
+    <active>true</active>
+    <description>This rule ensured that if the program is not active, it cannot be selected as a scheduling item.</description>
+    <errorConditionFormula>IF(AND(Procedure__r.IsActive = TRUE, NOT(ISBLANK(Procedure__c))), FALSE, TRUE)</errorConditionFormula>
+    <errorDisplayField>Procedure__c</errorDisplayField>
+    <errorMessage>Este procedimiento no se puede seleccionar ya que no está activo</errorMessage>
+</ValidationRule>

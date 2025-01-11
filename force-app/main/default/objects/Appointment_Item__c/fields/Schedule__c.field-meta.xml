@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Schedule__c</fullName>
+    <description>Relates to the associated schedule for this item</description>
+    <inlineHelpText>This field links the item to a specific schedule, allowing you to associate the item with a particular program</inlineHelpText>
+    <label>Programación</label>
+    <referenceTo>Appointment__c</referenceTo>
+    <relationshipLabel>Ítems de la programación</relationshipLabel>
+    <relationshipName>Schedule_Items</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

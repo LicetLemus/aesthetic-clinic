@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>contact_report_to_is_over_18</fullName>
+    <active>true</active>
+    <description>This validation rule ensures that a contact is at least 18 years old in order to be considered report to</description>
+    <errorConditionFormula>IF( ReportsTo.Age__c &lt; 18, TRUE, FALSE)</errorConditionFormula>
+    <errorDisplayField>ReportsToId</errorDisplayField>
+    <errorMessage>El contacto debe tener al menos 18 años para ser designado como reporta a</errorMessage>
+</ValidationRule>
